@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import ChessPattern from '@/components/common/ChessPattern';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,11 +18,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <div className="min-h-screen bg-gradient-to-b from-amber-50 to-amber-100">
+    <html lang="en" className="scroll-smooth">
+      <body className={`${inter.className} antialiased`}>
+        <div className="min-h-screen bg-gradient-to-b from-amber-50 via-amber-50 to-amber-100/50 relative">
+          <ChessPattern />
           <Header />
-          {children}
+          <div className="relative">
+            {children}
+          </div>
           <Footer />
         </div>
       </body>

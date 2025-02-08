@@ -1,3 +1,4 @@
+import { Trophy } from 'lucide-react';
 import Card from '@/components/common/Card';
 
 export default function Competitions() {
@@ -18,13 +19,16 @@ export default function Competitions() {
 
   return (
     <section className="space-y-6">
-      <h2 className="text-2xl font-bold text-slate-800">Competitions</h2>
+      <h2 className="text-2xl font-bold text-slate-800 flex items-center space-x-2">
+        <Trophy className="h-6 w-6" />
+        <span>Competitions</span>
+      </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {competitions.map((competition, index) => (
-          <Card
+          <Card 
             key={index}
             title={competition.title}
-            className="bg-white/80 backdrop-blur-sm"
+            className="bg-white/80 hover:bg-white/90 hover-lift group"
           >
             <p className="text-slate-600">{competition.description}</p>
           </Card>
