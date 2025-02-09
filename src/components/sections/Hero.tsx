@@ -18,18 +18,23 @@ export default function Hero() {
 
         <FadeIn delay={0.1}>
           <h1 className="text-4xl md:text-6xl font-extrabold text-slate-800 mb-4">
-            {CLUB_INFO.name}
+            St Neots Chess Club
           </h1>
         </FadeIn>
 
         <FadeIn delay={0.2}>
           <p className="text-xl text-slate-600">
-            {CLUB_INFO.description}
+            A chess club in Cambridgeshire&apos;s largest market town
           </p>
         </FadeIn>
 
         <FadeIn delay={0.3}>
-          <RotatingQuote />
+          <div className="mt-8 bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-xl max-w-2xl mx-auto border border-amber-200 hover:shadow-2xl transition-all duration-300">
+            <blockquote className="text-slate-700 italic text-lg">
+              &ldquo;All that matters on the chessboard is good moves...&rdquo;
+              <footer className="text-slate-500 mt-2">- Bobby Fischer</footer>
+            </blockquote>
+          </div>
         </FadeIn>
       </div>
     </div>
