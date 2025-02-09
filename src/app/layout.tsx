@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${inter.className} antialiased`} suppressHydrationWarning={true}>
         <div className="min-h-screen bg-gradient-to-b from-amber-50 via-amber-50 to-amber-100/50 relative">
           <ChessPattern />
           <Header />
