@@ -3,6 +3,7 @@
 import { Crown, Award } from 'lucide-react';
 import { CLUB_INFO } from '@/utils/constants';
 import FadeIn from '@/components/common/FadeIn';
+import RotatingQuote from '@/components/common/RotatingQuote';
 
 export default function Hero() {
   return (
@@ -28,12 +29,7 @@ export default function Hero() {
         </FadeIn>
 
         <FadeIn delay={0.3}>
-          <div className="mt-8 bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-xl max-w-2xl mx-auto border border-amber-200 hover:shadow-2xl transition-all duration-300">
-            <blockquote className="text-slate-700 italic text-lg">
-              &ldquo;All that matters on the chessboard is good moves...&rdquo;
-              <footer className="text-slate-500 mt-2">- Bobby Fischer</footer>
-            </blockquote>
-          </div>
+          <RotatingQuote />
         </FadeIn>
       </div>
     </div>
