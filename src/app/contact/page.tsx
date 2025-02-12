@@ -26,10 +26,10 @@ export default function Contact() {
               Get in touch via email and we'll get back to you as soon as possible.
             </p>
             <a
-              href="mailto:contact@stneotschessclub.com"
+              href="mailto:colin.emery@gmail.com"
               className="inline-flex items-center text-amber-600 hover:text-amber-700 font-medium"
             >
-              contact@stneotschessclub.com
+              colin.emery@gmail.com
             </a>
           </Card>
 
