@@ -91,10 +91,18 @@ export function ChessPatternAnimated() {
           return (
             <div
               key={i}
-              className={`aspect-square ${
-                isEven ? 'bg-slate-900' : ''
-              }`}
-            />
+              className={`
+                aspect-square transition-all duration-300
+                ${isEven ? 'bg-slate-900/60 hover:bg-slate-900/80' : ''}
+                group relative
+              `}
+            >
+              <div className={`
+                absolute inset-0 opacity-0 group-hover:opacity-100
+                transition-opacity duration-300 pointer-events-none
+                ${isEven ? 'bg-gradient-to-br from-amber-500/10 to-transparent' : ''}
+              `} />
+            </div>
           );
         })}
       </div>

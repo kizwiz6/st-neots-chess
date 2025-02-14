@@ -12,7 +12,7 @@ export default function MeetingTimes() {
       className="bg-white/80 backdrop-blur-sm"
     >
       <p className="text-slate-600">
-        During the season ({meetingTime.season}), the Club meets on{" "}
+        We meet on{" "}
         <span className="font-bold text-slate-800">
           {meetingTime.day}s at {meetingTime.time}
         </span> at:
