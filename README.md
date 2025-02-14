@@ -6,7 +6,7 @@ A modern, TypeScript-powered website for St Neots Chess Club, a local chess comm
 
 ## 🚀 Features
 
-- Responsive design optimized for all devices
+- Responsive design optimised for all devices
 - Dynamic chess-themed background with interactive animations
 - Real-time quote rotation featuring chess grandmasters
 - Interactive location mapping with Google Maps integration
