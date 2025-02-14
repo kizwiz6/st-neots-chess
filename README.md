@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# St Neots Chess Club Website
 
-## Getting Started
+A modern, TypeScript-powered website for St Neots Chess Club, a local chess community in Cambridgeshire, UK. The website features a distinctive chess-themed design with interactive elements, including an animated background pattern and a curated rotation of inspirational quotes from chess grandmasters.
 
-First, run the development server:
+![St Neots Chess Club Website](https://i.imgur.com/QVxTsFQ.png)
 
+## 🚀 Features
+
+- Responsive design optimized for all devices
+- Dynamic chess-themed background with interactive animations
+- Real-time quote rotation featuring chess grandmasters
+- Interactive location mapping with Google Maps integration
+- Modern card-based layout for clear information hierarchy
+
+## 🛠️ Built With
+
+- **Next.js 14** - React framework for production
+- **TypeScript** - Static type checking
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Animation library
+- **Google Maps API** - Location services
+- **Lucide React** - Icon components
+
+## 🚀 Getting Started
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/st-neots-chess.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+cd st-neots-chess
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Set up environment variables:
+```bash
+cp .env.example .env.local
+```
+Add your Google Maps API key to `.env.local`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Run the development server:
+```bash
+npm run dev
+```
 
-## Learn More
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-To learn more about Next.js, take a look at the following resources:
+## 🧪 Testing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Run tests
+npm test
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Run tests in watch mode
+npm run test:watch
+```
 
-## Deploy on Vercel
+## 📦 Build
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+# Create production build
+npm run build
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Start production server
+npm start
+```
+
+## 🔍 Key Features
+
+- Dynamic chess quotes rotation
+- Interactive chess-themed background
+- Responsive navigation
+- Google Maps integration
+- Club information and competitions
+- Contact forms and location details
+
+## 🌐 External Links
+
+- [English Chess Federation](https://www.englishchess.org.uk/)
+- [Cambridgeshire County Chess Association](http://www.cambschess.co.uk/)
+- [ECF League Management System](https://lms.englishchess.org.uk/)
+
+## 📄 License
+
+This project is released under the MIT License.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
