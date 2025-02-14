@@ -1,4 +1,5 @@
-import { Mail, Users, Calendar } from 'lucide-react';
+// src/app/contact/page.tsx
+import { Mail, Users, Trophy } from 'lucide-react';
 import Card from '@/components/common/Card';
 import LocationInfo from '@/components/sections/LocationInfo';
 
@@ -26,10 +27,10 @@ export default function Contact() {
               Get in touch via email and we'll get back to you as soon as possible.
             </p>
             <a
-              href="mailto:colin.emery@gmail.com"
+              href="mailto:contact@stneotschessclub.com"
               className="inline-flex items-center text-amber-600 hover:text-amber-700 font-medium"
             >
-              colin.emery@gmail.com
+              contact@stneotschessclub.com
             </a>
           </Card>
 
@@ -39,24 +40,23 @@ export default function Contact() {
             className="bg-white/80 backdrop-blur-sm"
           >
             <p className="text-slate-600 mb-4">
-              New members are always welcome to visit during club nights.
-              Your first visit is completely free!
+              New members are always welcome to visit during club nights. There is currently no membership fee.
             </p>
             <p className="text-slate-600">
-              We recommend contacting us before your first visit.
+              You can simply come along to play chess - there's no obligation to join the Conservative Club.
             </p>
           </Card>
 
           <Card
-            icon={<Calendar size={24} />}
-            title="Club Nights"
+            icon={<Trophy size={24} />}
+            title="Club Facilities"
             className="bg-white/80 backdrop-blur-sm"
           >
             <p className="text-slate-600 mb-4">
-              We meet every Monday at 7:30pm during the season (September through to May).
+              We have plenty of chess sets, boards, and clocks available for everyone to use.
             </p>
             <p className="text-slate-600">
-              Players of all strengths are welcome to join us.
+              You'll find a wide range of players with different skill levels at the club, making it perfect for players of all abilities.
             </p>
           </Card>
         </div>
@@ -71,16 +71,28 @@ export default function Contact() {
         >
           <div className="prose prose-slate max-w-none">
             <p>
-              St Neots Chess Club is affiliated with the Cambridgeshire County Chess Association
-              and the English Chess Federation.
+              St Neots Chess Club is affiliated with the{" "}
+              <a
+                href="http://www.cambschess.co.uk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-amber-600 hover:text-amber-700 transition-colors"
+              >
+                Cambridgeshire County Chess Association
+              </a>
+              {" "}and the{" "}
+              <a
+                href="https://www.englishchess.org.uk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-amber-600 hover:text-amber-700 transition-colors"
+              >
+                English Chess Federation
+              </a>.
             </p>
             <p>
-              We participate in various competitions throughout the season and offer friendly games
+              We participate in various competitions throughout the year and offer friendly games
               and informal coaching for players of all levels.
-            </p>
-            <p>
-              Please note that while your first visit is free, club membership fees apply for regular attendance.
-              Details of membership fees can be discussed during your visit.
             </p>
           </div>
         </Card>
