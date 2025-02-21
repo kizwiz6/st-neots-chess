@@ -1,26 +1,24 @@
-// jest.config.ts
-import type { Config } from 'jest';
-import nextJest from 'next/jest';
+// jest.config.js
+const nextJest = require('next/jest');
 
 const createJestConfig = nextJest({
   dir: './',
 });
 
-const customConfig: Config = {
-  testEnvironment: 'jest-environment-jsdom',
+const customJestConfig = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+  testEnvironment: 'jest-environment-jsdom',
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
   },
   transform: {
-    '^.+\\.(ts|tsx|js|jsx)$': ['babel-jest', { presets: ['next/babel'] }],
+    '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }],
   },
   transformIgnorePatterns: [
     'node_modules/(?!(lucide-react|framer-motion)/)',
   ],
   moduleDirectories: ['node_modules', '<rootDir>/'],
   testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
-  watchPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
 };
 
-export default createJestConfig(customConfig);
+module.exports = createJestConfig(customJestConfig);
