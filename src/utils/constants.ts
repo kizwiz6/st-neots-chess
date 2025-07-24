@@ -56,8 +56,17 @@ export const FAQ_ITEMS = [
   }
 ];
 
-export const EXTERNAL_LINKS = {
-  leagueTables: "your-league-tables-link",
-  fixtures: "your-fixtures-link",
-  ecfChildProtection: "https://www.englishchess.org.uk/safeguarding-children-policy/"
-};
+export const EXTERNAL_LINKS = [
+  {
+    name: "English Chess Federation",
+    url: "https://www.englishchess.org.uk/"
+  },
+  {
+    name: "English Chess Federation Grading Database",
+    url: "https://www.ecfrating.org.uk/"
+  },
+  {
+    name: "Cambridgeshire County Chess Association",
+    url: "http://www.cambschess.co.uk/"
+  }
+];
