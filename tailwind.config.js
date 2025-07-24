@@ -1,18 +1,12 @@
-// tailwind.config.ts
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+﻿/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
       keyframes: {
         chessfade: {
           '0%': { opacity: '0.04' },
@@ -20,11 +14,11 @@ const config: Config = {
           '100%': { opacity: '0.04' }
         },
         fadeIn: {
-          'from': {
+          'from': { 
             opacity: '0',
             transform: 'translateY(10px)'
           },
-          'to': {
+          'to': { 
             opacity: '1',
             transform: 'translateY(0)'
           }
@@ -39,6 +33,4 @@ const config: Config = {
   plugins: [
     require('@tailwindcss/typography'),
   ],
-};
-
-export default config;
+}
